@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="loadPage()">
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <ul id="searchSuggestions" class="search-suggestions"></ul>
+      </div>
+      <div class="loading" id="loading">
+        <img src="./orange_circles.gif" width="50" alt="loading" />
+        <span>...Loading</span>
+      </div>
+      <div class="weather-info" id="weatherInfo"></div>
+      <div class="forecast-list" id="forecastList"></div>
+      <ul class="locations-list" id="locationsList"></ul>
+    </div>
+    <footer>Powered by OpenWeatherMap API</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

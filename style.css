@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #87ceeb, #4682b4);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-suggestions {
+  width: 70%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 10px auto 0;
+  text-align: left;
+}
+
+.search-suggestions li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.search-suggestions li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  min-height: 200px;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.weather-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.locations-list {
+  margin-top: 20px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  list-style: none;
+}
+
+.locations-list li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.locations-list li:last-child {
+  border-bottom: none;
+}
+
+.locations-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.forecast-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #ccc;
+}

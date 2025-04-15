@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="loadPage()">
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <ul id="searchSuggestions" class="search-suggestions">
+          <li>Beijing</li>
+          <li>London</li>
+        </ul>
+      </div>
+      <div class="loading" id="loading">
+        <img src="./orange_circles.gif" width="50" alt="loading" />
+        <span>...Loading</span>
+      </div>
+      <div class="weather-info" id="weatherInfo">
+        <div class="weather-card">
+          <h2>Highland Park - US</h2>
+          <img
+            src="https://openweathermap.org/img/wn/04n@2x.png"
+            alt="Weather Icon"
+          />
+          <p>overcast clouds</p>
+          <p>Temperature: 270.28°C</p>
+          <p>Humidity: 79%</p>
+          <p>Wind Speed: 2.56 m/s</p>
+        </div>
+      </div>
+      <div class="forecast-list" id="forecastList">
+        <div class="forecast-card">
+          <p>2025-01-17 03:00:00</p>
+          <img
+            src="https://openweathermap.org/img/wn/04n@2x.png"
+            alt="Forecast Icon"
+          />
+          <p>overcast clouds</p>
+          <p>Temp: 270.54°C</p>
+        </div>
+        <div class="forecast-card">
+          <p>2025-01-17 06:00:00</p>
+          <img
+            src="https://openweathermap.org/img/wn/04n@2x.png"
+            alt="Forecast Icon"
+          />
+          <p>overcast clouds</p>
+          <p>Temp: 270.73°C</p>
+        </div>
+        <div class="forecast-card">
+          <p>2025-01-17 09:00:00</p>
+          <img
+            src="https://openweathermap.org/img/wn/04n@2x.png"
+            alt="Forecast Icon"
+          />
+          <p>broken clouds</p>
+          <p>Temp: 270.57°C</p>
+        </div>
+        <div class="forecast-card">
+          <p>2025-01-17 12:00:00</p>
+          <img
+            src="https://openweathermap.org/img/wn/03n@2x.png"
+            alt="Forecast Icon"
+          />
+          <p>scattered clouds</p>
+          <p>Temp: 270.07°C</p>
+        </div>
+        <div class="forecast-card">
+          <p>2025-01-17 15:00:00</p>
+          <img
+            src="https://openweathermap.org/img/wn/01d@2x.png"
+            alt="Forecast Icon"
+          />
+          <p>clear sky</p>
+          <p>Temp: 272.73°C</p>
+        </div>
+      </div>
+      <ul class="locations-list" id="locationsList">
+        <li>London</li>
+        <li>Beijing</li>
+        <li>New Yoir</li>
+        <li>Paris</li>
+        <li>Tokyo</li>
+      </ul>
+    </div>
+    <footer>Powered by OpenWeatherMap API</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
